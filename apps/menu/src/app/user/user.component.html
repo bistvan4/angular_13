@@ -1,0 +1,58 @@
+<div class="container py-5 h-100">
+  <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+              <div class="card-body p-4 p-md-5">
+                  <p class="mb-1 pb-1 mb-md-3"><b>A megtett út adatai</b></p>
+                  <form>
+                      <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="kiindulas"
+                              placeholder="Kiindulási hely">
+                          <label for="kiindulas">Kiindulási hely</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="uticel"
+                              placeholder="Úticél">
+                          <label for="kiindulas">Úticél</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="tovabbiuticel"
+                              placeholder="További úticél">
+                          <label for="kiindulas">További úticél</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="tavolsag"
+                              placeholder="Összes megtett távolság Google Maps alapján">
+                          <label for="kiindulas">Összes megtett távolság Google Maps alapján</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="motorterfogat"
+                              placeholder="Motortérfogat">
+                          <label for="kiindulas">Motortérfogat</label>
+                      </div>
+                      <div class="mt-4 pt-2 d-grid gap-2">
+                          <input class="btn btn-primary btn-lg" type="button" onclick="Szamol()"
+                              value="Ellenőrzés és számítás" />
+                      </div>
+                  </form>
+                  <hr>
+                  <table class="table table-borderless">
+                      <tr>
+                          <td>Útiköltség:</td>
+                          <td><p id="utikoltseg"></p></td>
+                      </tr>
+                      <tr>
+                          <td>Amortizáció:</td>
+                          <td><p id="amortizacio"></p></td>
+                      </tr>
+                      <tr>
+                          <td><b>Összes elszámolható költség:</b></td>
+                          <td><p id="vegosszeg"></p></td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
